@@ -1,0 +1,66 @@
+body {
+    background-image: url(../img/bg.jpg);
+    background-repeat: repeat;
+}
+.grid {
+    color: seagreen;
+    font-size: 50px;
+    width: 800px;
+    /* CSS box model:
+        margin:10px; -- margin on all sides
+        margin:10px 5px; -- 10px top and bottom, 5px left and right
+        margin:10px 5px 7px; -- 10px top, 5px left/right, 7px bottom
+        margin:5px 6px 7px 8px; -- top, right, bottom, left
+    */
+    margin: 10px auto 0;
+    border: 2px solid salmon;
+
+    /* make this a grid container */
+    display: grid;
+
+
+
+    /* set a grid with two columns, each 400px wide 
+    grid-template-columns: 400px 400px;*/
+
+    /* set a grid with two columns, each taking up an equal amount of space */
+    /* grid-template-columns: 1fr 1fr; */
+    /* fr = "fraction", or a fraction of the available space */
+
+    /* use "repeat" to add four columns  */
+    grid-template-columns: repeat(4, 1fr);
+
+    /* you can also use grid-template-rows; */
+    grid-template-rows: repeat(4, 100px);
+}
+
+.grid-item{
+    background: lightgrey;
+    text-align: center;
+    font-size: 24px;
+    border: 2px dashed darkgreen;
+    height: 50px;
+    width: 50px;
+
+}
+
+/* using the grid column and row numbers, position a box exactly */
+.grid-item:nth-child(1){
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+/* use the justify and align properties to position items */
+.grid-item:nth-child(4){
+    /* align property aligns things vertically */
+    
+    align-self: end;
+    /* justify property aligns things horizontally */
+    justify-self: end;
+    /* grid-column-start: ;
+    grid-column-end: ;
+    grid-row-start: ;
+    grid-row-end: ; */
+}
