@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="site-header">
+                <div class="banner">
+                    <img src="img/logo/logo.png" alt="Main Banner">
+                </div>
+                <h1 class="title">Want to be your own boss?</h1>
+            </header>
+        
+            <div class="content">
+                <div class="price">
+                    <h3>Start today and make up to $30/hr driving your own vehicle with Dash!</h3>
+                </div>
+                <div class="scooter">
+                    <img src="img/bg-image/scooter.svg" alt="scooter">
+                </div>
+
+                <article class="main-content">
+                    <section class="form-wrap">
+                        <h2>Apply Now</h2>
+                        <h4>Enter your info below.</h4>
+                        <form action="somePhpPage.php" method="GET" id="htmlForm">
+                            <div>
+                                <label for="firstName"></label>
+                                <input 
+                                type="text" name="firstName" id="firstName" placeholder="First name"
+                                required autofocus/>  
+                            </div>
+                            <div>
+                                <label for="lastName"></label>
+                                <input type="text" name="lastName" id="lastName" placeholder="Last name" maxlength="20">
+                            </div>
+                            <div>
+                                <label for="phone"></label>
+                                <input type="phonenumber" name="phone" id="phone" placeholder="Phone number">
+                            </div>
+                            <div>
+                                <label for="email"></label>
+                                <input type="emailaddress" name="email" id="email" placeholder="Email Address">
+                            </div>
+                                <label for="terms">
+                                    <input type="checkbox" name="terms" id="terms" value="no">
+                                    <h4>I agree to dash terms</h4>
+                                </label>
+                            <div>
+                                <button type="drive">DRIVE WITH US</button>
+                            </div>
+                            <div>
+                                <h5>Already applied?</h5>
+                                <h5 class="red">Check your application status here</h5>
+                            </div>
+                        </form>
+                    </section>  
+                    <!-- Forms section closing  -->   
+                </article>
+            </div>
+
+            <footer class="site-footer">
+                <p>See how much you can earn with Dash.</p>
+                <p>how many hours do you want to drive with us this week?</p>
+                <div>
+                    <label for="hours"></label>
+                    <input type="hours" name="hours" id="hours" placeholder="Hours">
+                </div>
+                <div>
+                    <label for="city"></label>
+                    <input type="city" name="city" id="city" placeholder="City">
+                </div>
+                <div>
+                    <button type="calc">CALCULATE</button>
+                </div>
+
+                
+                <div class="icons">
+                    <a href="#fb">
+                        <img src="img/icons/facebook.svg" alt="facebook icon">
+                    </a>
+                    <a href="#ins">
+                        <img src="img/icons/instagram.svg" alt="instagram icon">
+                    </a>
+                    <a href="#lin">
+                        <img src="img/icons/linkedin.svg" alt="linkedin icon">
+                    </a>
+                    <a href="#twit">
+                        <img src="img/icons/twitter.svg" alt="twitter icon">
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
