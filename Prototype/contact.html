@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadeland Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="top"></div>
+        <header class="site-header">
+            <div class="logo">
+                <img src="img/logo.jpg" alt="Logo">
+            </div>
+
+            <nav class="navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="active">CONTACT</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+            <article class="contact-content">
+                <div class="form-wrap">
+                    <h2>Contact Forms</h2>
+                    <form action="somePhpPage.php" method="GET" id="htmlForm">
+                        <div>
+                            <label for="firstName">First Name:</label>
+                            <input 
+                            type="text" name="firstName" id="firstName" placeholder="Adam"
+                            required 
+                            autofocus  
+                            />  
+                        </div>
+                        <div>
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Lambert" maxlength="20">
+                        </div>
+                        <div>
+                            <label for="comment">Comment:</label>
+                            <textarea name="comment" id="comment"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>  
+                <!-- Forms section closing  -->      
+                <div class="google-maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2578.3439170069264!2d-75.70405661278033!3d45.41256094042215!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf755f33de4ab7e12!2sJadeland!5e0!3m2!1sen!2sca!4v1583474522462!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0"></iframe>
+                </div>
+            </article>
+        </div>
+                    
+        <footer>
+            <div class="footer">
+                <div class="copyright">
+                    Copyright &copy; 2020 Chang Zhao. All rights reserved.
+                </div>
+                
+                <div class="footer-nav">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="index.html" class="active">Home</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="contact-info">
+                    <img src="img/social.png" alt="social-network">
+                </div>
+
+                <div class="address">
+                    <p>
+                        625 Somerset Street West, Ottawa, O.N. K1R 5K3
+                    <p>
+               
+                    <a href="#top" class="top">
+                        <img src="img/up-arrow.png" alt="up-arrow image">
+                    </a>
+                </div>        
+                
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
